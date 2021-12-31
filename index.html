@@ -34,30 +34,33 @@
         return true;
       }
     });
-    console.log(isAdult);
+    console.log("Is at least one person 19 or older?", isAdult);
 
     // Array.prototype.every() // is everyone 19 or older?
     const allAdult = people.every(person => ((new Date())
       .getFullYear()) - person.year >= 19);
-    console.log(allAdult);
+    console.log("Is everyone 19 or older?", allAdult);
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
     const searchComment = comments.find(comment => comment.id === 823423);
-    console.log(searchComment);
+    console.log("Find the comment with ID of 823423:", searchComment);
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
     // delete the comment with the ID of 823423
     const index = comments.findIndex(comment => comment.id === 823423);
-    console.log(index);
+    console.log("Display the index of the comment with ID of 823423:", index);
 
     const newArray = [
       ...comments.slice(0, index),
       ...comments.slice(index + 1)
     ];
+    console.log("--------------------------");
+    console.log("Delete the comment with ID of 823423 from the new array:")
     console.table(newArray);
+    console.log("The original array remains unchanged:")
     console.table(comments);
   </script>
 </body>
