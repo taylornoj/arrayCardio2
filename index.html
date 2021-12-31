@@ -44,11 +44,7 @@
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
-    const searchComment = comments.find(comment => {
-      if(comment.id === 823423) {
-        return comment.text;
-      }
-    });
+    const searchComment = comments.find(comment => comment.id === 823423);
     console.log(searchComment);
 
     // Array.prototype.findIndex()
