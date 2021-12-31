@@ -1,13 +1,14 @@
 body {
- 
   min-height: 100vh;
   font-family: 'Rubik', sans-serif;
-  background-image: linear-gradient(to top,
-   #f9df8d, #f8e090, #f7e193, #f7e196,
-   #f6e299, #f5e39e, #f4e3a3, #f3e4a8,
-   #f1e5b0, #f0e6b8, #eee7bf, #ede8c7);
 }
 
 header {
   text-align: center;
+}
+
+.code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
